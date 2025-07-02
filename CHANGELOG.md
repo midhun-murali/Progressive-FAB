@@ -19,4 +19,8 @@ All notable changes to this project will be documented in this file.
 
 ## [0.0.4] - 2025-07-02
 ### Added
+- Improved readme.
+
+## [0.0.5] - 2025-07-02
+### Added
 - Added screenshot for representation.

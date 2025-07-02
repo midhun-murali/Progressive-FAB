@@ -2,7 +2,7 @@
 
 A Flutter package providing a progressive Floating Action Button (FAB) for your applications.
 
-![ProgressiveFab Example](images/progressive_fab_example.png)
+![ProgressiveFab Example](example/progressive_fab_example.png)
 
 ## Features
 

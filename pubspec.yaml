@@ -1,10 +1,13 @@
 name: progressive_fab
 description: "A customizable Progressive Floating Action Button (FAB) for Flutter."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/midhun-murali/Progressive-FAB
 repository: https://github.com/midhun-murali/Progressive-FAB
 issue_tracker: https://github.com/midhun-murali/Progressive-FAB/issues
 documentation: https://github.com/midhun-murali/Progressive-FAB#readme
+screenshots:
+  - path: example/progressive_fab_example.png
+    description: "This is a description of my screenshot."
 
 environment:
   sdk: ^3.8.1
@@ -27,8 +30,7 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   # Add this under the top-level section (not under flutter:)
-  assets:
-    - images/progressive_fab_example.png
+  #  assets:
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
