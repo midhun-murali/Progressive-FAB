@@ -1,16 +1,39 @@
 import 'package:flutter/material.dart';
 
+/// A customizable Floating Action Button with a circular progress indicator.
 class ProgressiveFAB extends StatelessWidget {
+  /// The progress value (0-100) to display on the FAB.
   final double progress; // 0-100
+  /// Callback when the FAB is pressed.
   final VoidCallback? onPressed;
+
+  /// The total size (diameter) of the FAB including progress border.
   final double size;
+
+  /// The padding between the FAB and the progress border.
   final double padding;
+
+  /// The background color of the FAB.
   final Color fabColor;
+
+  /// The color of the border (background of progress arc).
   final Color borderColor;
+
+  /// The color of the progress arc.
   final Color progressColor;
+
+  /// The icon to display inside the FAB.
   final Widget icon;
+
+  /// The color of the icon.
   final Color iconColor;
 
+  /// Creates a ProgressiveFAB widget.
+  ///
+  /// [progress] should be between 0 and 100.
+  /// [size] is the total diameter of the widget.
+  /// [padding] is the space between the FAB and the progress border.
+  /// [fabColor], [borderColor], [progressColor], [icon], and [iconColor] customize appearance.
   const ProgressiveFAB({
     super.key,
     required this.progress,
@@ -62,11 +85,18 @@ class ProgressiveFAB extends StatelessWidget {
   }
 }
 
+/// Painter for the circular progress and border of the FAB.
 class _FabProgressPainter extends CustomPainter {
-  final double progress; // 0.0 to 1.0
+  /// Progress value (0.0 to 1.0) for the arc.
+  final double progress;
+
+  /// Color of the border (background circle).
   final Color borderColor;
+
+  /// Color of the progress arc.
   final Color progressColor;
 
+  /// Creates a painter for the FAB's progress and border.
   _FabProgressPainter({
     required this.progress,
     required this.borderColor,
@@ -102,6 +132,7 @@ class _FabProgressPainter extends CustomPainter {
     );
   }
 
+  /// Determines whether the painter should repaint based on property changes.
   @override
   bool shouldRepaint(covariant _FabProgressPainter oldDelegate) {
     return progress != oldDelegate.progress ||

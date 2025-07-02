@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Progressive FAB Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const FabDemoPage(),
     );
   }
@@ -42,7 +40,10 @@ class _FabDemoPageState extends State<FabDemoPage> {
     return Scaffold(
       appBar: AppBar(title: const Text('Progressive FAB Example')),
       body: Center(
-        child: Text('Progress: \\${_progress.toInt()}%', style: const TextStyle(fontSize: 24)),
+        child: Text(
+          'Progress: \\${_progress.toInt()}%',
+          style: const TextStyle(fontSize: 24),
+        ),
       ),
       floatingActionButton: ProgressiveFAB(
         progress: _progress,
@@ -58,4 +59,3 @@ class _FabDemoPageState extends State<FabDemoPage> {
     );
   }
 }
-

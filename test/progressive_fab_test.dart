@@ -3,12 +3,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:progressive_fab/progressive_fab.dart';
 
 void main() {
-  testWidgets('ProgressiveFAB renders with default values', (WidgetTester tester) async {
+  testWidgets('ProgressiveFAB renders with default values', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
-        home: Scaffold(
-          floatingActionButton: ProgressiveFAB(progress: 50),
-        ),
+        home: Scaffold(floatingActionButton: ProgressiveFAB(progress: 50)),
       ),
     );
     expect(find.byType(ProgressiveFAB), findsOneWidget);
@@ -16,7 +16,9 @@ void main() {
     expect(find.byIcon(Icons.check), findsOneWidget);
   });
 
-  testWidgets('ProgressiveFAB calls onPressed when tapped', (WidgetTester tester) async {
+  testWidgets('ProgressiveFAB calls onPressed when tapped', (
+    WidgetTester tester,
+  ) async {
     bool pressed = false;
     await tester.pumpWidget(
       MaterialApp(
@@ -32,7 +34,9 @@ void main() {
     expect(pressed, isTrue);
   });
 
-  testWidgets('ProgressiveFAB displays custom icon and colors', (WidgetTester tester) async {
+  testWidgets('ProgressiveFAB displays custom icon and colors', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(

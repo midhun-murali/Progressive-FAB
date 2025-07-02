@@ -8,3 +8,7 @@ All notable changes to this project will be documented in this file.
 - Core functionality implemented.
 - MIT License added.
 
+## [0.0.2] - 2025-07-02
+### Added
+- Added detailed documentation comments for all public classes, constructors, fields, and methods in the API.
+- Improved code formatting and clarity in `progressive_fab.dart`.
