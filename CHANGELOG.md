@@ -12,3 +12,8 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Added detailed documentation comments for all public classes, constructors, fields, and methods in the API.
 - Improved code formatting and clarity in `progressive_fab.dart`.
+
+## [0.0.3] - 2025-07-02
+### Added
+- Screenshot of visual representation.
+- Improved code example.
