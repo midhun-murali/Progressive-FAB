@@ -15,5 +15,8 @@ All notable changes to this project will be documented in this file.
 
 ## [0.0.3] - 2025-07-02
 ### Added
-- Screenshot of visual representation.
 - Improved code example.
+
+## [0.0.4] - 2025-07-02
+### Added
+- Added screenshot for representation.
